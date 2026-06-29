@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kevin Doyle | ZeroPoint — Precision Rifle Athlete</title>
   <meta name="description"
-    content="Precision Under Pressure. Execution Without Compromise. Irish Paralympic 10m Air Rifle athlete building toward LA 2028.">
+    content="Precision Under Pressure. Execution Without Compromise. Irish Paralympic precision rifle athlete building toward LA 2028.">
   <meta property="og:title" content="Kevin Doyle | ZeroPoint">
   <meta property="og:description" content="Precision Under Pressure. Execution Without Compromise.">
   <meta property="og:url" content="https://kevindoyleparalympian.com/">
   <link rel="canonical" href="https://kevindoyleparalympian.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+    rel="stylesheet">
 
   <style>
     /* ── TOKENS ─────────────────────────────────────── */
@@ -25,7 +26,7 @@
       --crimson: #8B1E3F;
       --font: 'Roboto', sans-serif;
       --max-w: 1100px;
-      --pad: 5rem 1.5rem;
+      --section-pad: 6rem 1.5rem;
     }
 
     /* ── RESET ──────────────────────────────────────── */
@@ -66,7 +67,7 @@
       top: 0;
       z-index: 100;
       background: var(--near-black);
-      border-bottom: 1px solid #1e1e1e;
+      border-bottom: 1px solid #1a1a1a;
     }
 
     .nav-inner {
@@ -80,25 +81,24 @@
     }
 
     .nav-brand {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--cool-white);
-      flex-shrink: 0;
     }
 
     .nav-links {
       display: flex;
-      gap: 2rem;
+      gap: 2.25rem;
       list-style: none;
     }
 
     .nav-links a {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 400;
       color: var(--mid-grey);
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
       transition: color 0.2s;
     }
 
@@ -121,30 +121,30 @@
       width: 22px;
       height: 2px;
       background: var(--cool-white);
+      transition: opacity 0.2s;
     }
 
-    /* ── SHARED ─────────────────────────────────────── */
+    /* ── SHARED UTILITIES ───────────────────────────── */
     .wrap {
       max-width: var(--max-w);
       margin: 0 auto;
-      padding: 0 1.5rem;
     }
 
-    .section-label {
+    .eyebrow {
       font-size: 11px;
       font-weight: 600;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--mid-grey);
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
 
-    .section-label--light {
-      color: rgba(245, 247, 249, 0.4);
+    .eyebrow--light {
+      color: rgba(245, 247, 249, 0.35);
     }
 
     .rule {
-      width: 2.5rem;
+      width: 2rem;
       height: 2px;
       background: var(--crimson);
       margin-bottom: 2rem;
@@ -153,10 +153,11 @@
     .btn {
       display: inline-block;
       font-family: var(--font);
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500;
-      letter-spacing: 0.06em;
-      padding: 0.75rem 1.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.8rem 2rem;
       transition: opacity 0.2s;
       cursor: pointer;
     }
@@ -167,60 +168,52 @@
     }
 
     .btn-primary:hover {
-      opacity: 0.85;
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--cool-white);
-      border: 1px solid rgba(245, 247, 249, 0.3);
-      transition: border-color 0.2s;
-    }
-
-    .btn-outline:hover {
-      border-color: var(--cool-white);
+      opacity: 0.82;
     }
 
     /* ── HERO ───────────────────────────────────────── */
     #hero {
       background-color: var(--near-black);
       background-image:
-        linear-gradient(90deg, rgba(10, 10, 10, 0.92) 0%, rgba(10, 10, 10, 0.65) 60%, rgba(10, 10, 10, 0.3) 100%),
+        linear-gradient(90deg,
+          rgba(10, 10, 10, 0.96) 0%,
+          rgba(10, 10, 10, 0.80) 55%,
+          rgba(10, 10, 10, 0.30) 100%),
         url('https://kevindoyleparalympian.com/wp-content/uploads/2026/04/Video-Lead-In-Image.webp');
       background-position: center right;
       background-size: cover;
       background-repeat: no-repeat;
       min-height: 100vh;
-      padding: 0 1.5rem;
       display: flex;
       align-items: center;
+      padding: 0 1.5rem;
       position: relative;
-      overflow: hidden;
     }
 
+    /* Reticle motif — subtle, on-brand */
     #hero::before {
       content: '';
       position: absolute;
-      right: -80px;
+      right: 12%;
       top: 50%;
       transform: translateY(-50%);
-      width: 520px;
-      height: 520px;
+      width: 480px;
+      height: 480px;
       border-radius: 50%;
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.05);
       pointer-events: none;
     }
 
     #hero::after {
       content: '';
       position: absolute;
-      right: 40px;
+      right: 12%;
       top: 50%;
       transform: translateY(-50%);
-      width: 320px;
-      height: 320px;
+      width: 280px;
+      height: 280px;
       border-radius: 50%;
-      border: 1px solid rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(139, 30, 63, 0.18);
       pointer-events: none;
     }
 
@@ -232,50 +225,116 @@
     }
 
     .hero-label {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 600;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--crimson);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.75rem;
     }
 
     .hero-title {
-      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-size: clamp(2.2rem, 5.5vw, 3.75rem);
       font-weight: 600;
       color: var(--cool-white);
-      line-height: 1.1;
-      max-width: 680px;
-      margin-bottom: 1.5rem;
+      line-height: 1.08;
+      max-width: 700px;
+      margin-bottom: 1.75rem;
+      letter-spacing: -0.01em;
     }
 
     .hero-sub {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 300;
       color: var(--mid-grey);
-      max-width: 520px;
-      margin-bottom: 2.5rem;
-      line-height: 1.7;
+      max-width: 480px;
+      margin-bottom: 3rem;
+      line-height: 1.75;
     }
 
-    .hero-actions {
+    /* ── ABOUT ──────────────────────────────────────── */
+    #about {
+      background: var(--near-black);
+      padding: var(--section-pad);
+      border-top: 1px solid #1a1a1a;
+    }
+
+    .about-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .about-title {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      font-weight: 400;
+      color: var(--cool-white);
+      line-height: 1.25;
+      margin-bottom: 1.75rem;
+    }
+
+    .about-body {
+      font-size: 0.975rem;
+      font-weight: 300;
+      color: var(--mid-grey);
+      line-height: 1.85;
+    }
+
+    .about-body p+p {
+      margin-top: 1.1rem;
+    }
+
+    .about-stats {
       display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 0;
+      border-top: 1px solid #1e1e1e;
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #1e1e1e;
+      align-items: baseline;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245, 247, 249, 0.25);
+    }
+
+    .stat-value {
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: var(--cool-white);
+      line-height: 1.5;
+    }
+
+    .stat-value strong {
+      font-weight: 600;
+      color: var(--cool-white);
     }
 
     /* ── PHILOSOPHY ─────────────────────────────────── */
     #philosophy {
       background: var(--cool-white);
-      padding: var(--pad);
+      padding: var(--section-pad);
     }
 
-    .philosophy-grid {
+    .philosophy-inner {
       max-width: var(--max-w);
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      gap: 5rem;
       align-items: start;
     }
 
@@ -288,10 +347,10 @@
     }
 
     .philosophy-body {
-      font-size: 1rem;
+      font-size: 0.975rem;
       font-weight: 300;
       color: #444;
-      line-height: 1.8;
+      line-height: 1.85;
     }
 
     .philosophy-body p+p {
@@ -300,8 +359,8 @@
 
     /* ── PERFORMANCE SYSTEM ─────────────────────────── */
     #system {
-      background: var(--near-black);
-      padding: var(--pad);
+      background: #0e0e0e;
+      padding: var(--section-pad);
     }
 
     .system-inner {
@@ -310,7 +369,7 @@
     }
 
     .system-header {
-      margin-bottom: 3rem;
+      margin-bottom: 3.5rem;
     }
 
     .system-title {
@@ -321,7 +380,7 @@
     }
 
     .system-sub {
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: 300;
       color: var(--mid-grey);
     }
@@ -335,144 +394,45 @@
 
     .system-card {
       background: #111;
-      padding: 2rem;
+      padding: 2.25rem 2rem;
+    }
+
+    .system-card-num {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      color: var(--crimson);
+      margin-bottom: 1.25rem;
     }
 
     .system-card-title {
       font-size: 1rem;
       font-weight: 600;
       color: var(--cool-white);
-      margin-bottom: 1rem;
-      letter-spacing: 0.04em;
+      margin-bottom: 0.85rem;
+      letter-spacing: 0.02em;
     }
 
     .system-card-body {
       font-size: 0.9rem;
       font-weight: 300;
       color: var(--mid-grey);
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
-    .system-footnote {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      font-weight: 300;
-      color: var(--mid-grey);
-      font-style: italic;
-    }
-
-    /* ── FEATURED VIDEO ─────────────────────────────── */
-    #featured-video {
-      background: var(--cool-white);
-      padding: var(--pad);
-      border-top: 1px solid #e0e3e6;
-    }
-
-    .featured-video-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-    }
-
-    .featured-video-header {
-      margin-bottom: 2rem;
-    }
-
-    .featured-video-title {
-      font-size: clamp(1.3rem, 2.5vw, 1.75rem);
-      font-weight: 400;
-      color: var(--primary-text);
-      margin-bottom: 0.5rem;
-    }
-
-    .featured-video-sub {
-      font-size: 0.95rem;
-      font-weight: 300;
-      color: #555;
-    }
-
-    .video-embed-wrapper {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      background: #000;
-    }
-
-    .video-embed-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    /* ── VIDEO GRID ─────────────────────────────────── */
-    #videos {
-      background: #f0f2f4;
-      padding: var(--pad);
-      border-top: 1px solid #e0e3e6;
-    }
-
-    .videos-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-    }
-
-    .videos-header {
-      margin-bottom: 2.5rem;
-    }
-
-    .videos-title {
-      font-size: clamp(1.3rem, 2.5vw, 1.75rem);
-      font-weight: 400;
-      color: var(--primary-text);
-    }
-
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-
-    .video-card {
-      background: var(--cool-white);
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      transition: box-shadow 0.2s;
-    }
-
-    .video-card:hover {
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
-    }
-
-    .video-card img {
-      width: 100%;
-      aspect-ratio: 16/9;
-      object-fit: cover;
-    }
-
-    .video-card-title {
-      padding: 1rem 1.2rem;
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--primary-text);
-      line-height: 1.4;
-    }
-
-    /* ── MISSION ────────────────────────────────────── */
+    /* ── MISSION / TIMELINE ─────────────────────────── */
     #mission {
       background: var(--cool-white);
-      padding: var(--pad);
+      padding: var(--section-pad);
       border-top: 1px solid #e0e3e6;
     }
 
-    .mission-grid {
+    .mission-inner {
       max-width: var(--max-w);
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      gap: 5rem;
       align-items: start;
     }
 
@@ -484,54 +444,90 @@
     }
 
     .mission-body {
-      font-size: 1rem;
+      font-size: 0.975rem;
       font-weight: 300;
       color: #444;
-      line-height: 1.8;
-      margin-bottom: 2rem;
+      line-height: 1.85;
+      margin-bottom: 2.5rem;
     }
 
-    .mission-list {
-      list-style: none;
+    /* Timeline */
+    .timeline {
       display: flex;
       flex-direction: column;
-      gap: 0.75rem;
+      gap: 0;
+      position: relative;
     }
 
-    .mission-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      font-size: 0.95rem;
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 1.5rem;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid #e0e3e6;
+      align-items: baseline;
+    }
+
+    .timeline-item:first-child {
+      border-top: 1px solid #e0e3e6;
+    }
+
+    .timeline-date {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--mid-grey);
+      padding-top: 2px;
+    }
+
+    .timeline-event {
+      font-size: 0.925rem;
       font-weight: 400;
       color: var(--primary-text);
+      line-height: 1.5;
     }
 
-    .mission-list li::before {
-      content: '';
-      display: block;
-      flex-shrink: 0;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--crimson);
-      margin-top: 0.55em;
+    .timeline-event strong {
+      font-weight: 600;
+      color: var(--crimson);
+    }
+
+    .timeline-item--future .timeline-event {
+      color: var(--mid-grey);
+    }
+
+    .timeline-item--future .timeline-date {
+      color: rgba(122, 127, 134, 0.5);
+    }
+
+    /* Mission quote */
+    .mission-quote-block {
+      padding-top: 1rem;
     }
 
     .mission-quote {
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       font-weight: 300;
       color: var(--primary-text);
-      line-height: 1.5;
+      line-height: 1.55;
       font-style: italic;
       padding-left: 1.5rem;
       border-left: 2px solid var(--crimson);
+      margin-bottom: 1.5rem;
+    }
+
+    .mission-quote-sub {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.8;
     }
 
     /* ── PARTNER ────────────────────────────────────── */
     #partner {
       background: var(--near-black);
-      padding: var(--pad);
+      padding: var(--section-pad);
     }
 
     .partner-inner {
@@ -540,22 +536,22 @@
     }
 
     .partner-header {
-      margin-bottom: 3.5rem;
+      max-width: 640px;
+      margin-bottom: 4rem;
     }
 
     .partner-title {
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400;
       color: var(--cool-white);
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
 
     .partner-lead {
       font-size: 1rem;
       font-weight: 300;
       color: var(--mid-grey);
-      max-width: 580px;
-      line-height: 1.8;
+      line-height: 1.85;
     }
 
     .partner-grid {
@@ -563,67 +559,80 @@
       grid-template-columns: 1fr 1fr;
       gap: 1px;
       background: #1e1e1e;
-      margin-bottom: 3rem;
+      margin-bottom: 3.5rem;
     }
 
     .partner-card {
       background: #111;
-      padding: 2rem;
+      padding: 2.25rem 2rem;
     }
 
     .partner-card-title {
-      font-size: 0.85rem;
+      font-size: 10px;
       font-weight: 600;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--crimson);
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
 
     .partner-card-body {
-      font-size: 0.95rem;
+      font-size: 0.925rem;
       font-weight: 300;
       color: var(--mid-grey);
       line-height: 1.8;
     }
 
-    .partner-card-body ul {
+    .partner-card-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .partner-card-body ul li {
-      display: flex;
-      align-items: flex-start;
       gap: 0.6rem;
     }
 
-    .partner-card-body ul li::before {
+    .partner-card-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.925rem;
+      font-weight: 300;
+      color: var(--mid-grey);
+      line-height: 1.55;
+    }
+
+    .partner-card-list li::before {
       content: '';
       display: block;
       flex-shrink: 0;
-      width: 5px;
-      height: 5px;
+      width: 4px;
+      height: 4px;
       border-radius: 50%;
       background: var(--mid-grey);
       margin-top: 0.6em;
     }
 
     .partner-closing {
-      font-size: 1.1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #1e1e1e;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .partner-closing-text {
+      font-size: 1rem;
       font-weight: 300;
-      color: var(--cool-white);
-      line-height: 1.7;
-      max-width: 640px;
-      margin-bottom: 2rem;
+      color: rgba(245, 247, 249, 0.6);
+      max-width: 520px;
+      line-height: 1.75;
     }
 
     /* ── CONTACT ────────────────────────────────────── */
     #contact {
       background: var(--cool-white);
-      padding: var(--pad);
+      padding: var(--section-pad);
       border-top: 1px solid #e0e3e6;
     }
 
@@ -632,7 +641,7 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      gap: 5rem;
       align-items: start;
     }
 
@@ -640,36 +649,48 @@
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400;
       color: var(--primary-text);
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
 
     .contact-body {
-      font-size: 1rem;
+      font-size: 0.975rem;
       font-weight: 300;
       color: #444;
-      line-height: 1.8;
+      line-height: 1.85;
       margin-bottom: 2rem;
     }
 
     .contact-email {
-      font-size: 1rem;
+      display: inline-block;
+      font-size: 0.975rem;
       font-weight: 500;
       color: var(--crimson);
       letter-spacing: 0.02em;
+      margin-bottom: 0.5rem;
     }
 
     .contact-email:hover {
-      opacity: 0.8;
+      opacity: 0.75;
+    }
+
+    .contact-response {
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--mid-grey);
+      margin-top: 0.5rem;
     }
 
     .contact-detail {
       font-size: 0.9rem;
       font-weight: 300;
-      color: var(--mid-grey);
-      line-height: 1.8;
-      margin-top: 2rem;
+      color: #555;
+      line-height: 1.85;
       padding-top: 2rem;
       border-top: 1px solid #e0e3e6;
+    }
+
+    .contact-detail p+p {
+      margin-top: 1rem;
     }
 
     /* ── LOGO BAND ──────────────────────────────────── */
@@ -691,16 +712,16 @@
     }
 
     .logo-band-inner img {
-      height: 56px;
+      height: 52px;
       width: auto;
       object-fit: contain;
-      opacity: 0.75;
-      filter: grayscale(20%);
+      opacity: 0.6;
+      filter: grayscale(30%);
       transition: opacity 0.2s;
     }
 
     .logo-band-inner img:hover {
-      opacity: 1;
+      opacity: 0.9;
     }
 
     /* ── FOOTER ─────────────────────────────────────── */
@@ -709,27 +730,24 @@
       padding: 1.75rem 1.5rem;
     }
 
-    .footer-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-    }
-
     .footer-copy {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 400;
-      color: #3a3a3a;
-      letter-spacing: 0.04em;
+      color: #2e2e2e;
+      letter-spacing: 0.06em;
       text-align: center;
+      text-transform: uppercase;
     }
 
     /* ── RESPONSIVE ─────────────────────────────────── */
     @media (max-width: 900px) {
 
-      .philosophy-grid,
-      .mission-grid,
+      .about-inner,
+      .philosophy-inner,
+      .mission-inner,
       .contact-inner {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
       }
 
       .system-grid {
@@ -740,28 +758,27 @@
         grid-template-columns: 1fr;
       }
 
-      .video-grid {
-        grid-template-columns: 1fr 1fr;
+      .logo-band-inner {
+        gap: 2.5rem;
       }
     }
 
     @media (max-width: 600px) {
       :root {
-        --pad: 3.5rem 1.25rem;
+        --section-pad: 4rem 1.25rem;
       }
 
       .nav-links {
         display: none;
         flex-direction: column;
-        gap: 0;
         position: absolute;
         top: 60px;
         left: 0;
         right: 0;
         background: var(--near-black);
-        border-top: 1px solid #1e1e1e;
-        padding: 1rem 1.5rem;
-        gap: 1rem;
+        border-top: 1px solid #1a1a1a;
+        padding: 1.25rem 1.5rem;
+        gap: 1.1rem;
       }
 
       .nav-links.open {
@@ -772,21 +789,13 @@
         display: flex;
       }
 
-      .video-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-inner {
+      .partner-closing {
         flex-direction: column;
         align-items: flex-start;
       }
 
-      .logo-band-inner {
-        gap: 2.5rem;
-      }
-
       .logo-band-inner img {
-        height: 40px;
+        height: 38px;
       }
     }
   </style>
@@ -797,14 +806,14 @@
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <span class="nav-brand">Kevin Doyle · ZeroPoint</span>
+      <span class="nav-brand">Kevin Doyle</span>
       <button class="nav-toggle" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#philosophy">The Process</a></li>
         <li><a href="#mission">Mission</a></li>
-        <li><a href="#videos">Watch</a></li>
         <li><a href="#partner">Partner</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -814,31 +823,73 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
-      <p class="hero-label">Paralympic 10m Air Rifle · Ireland · LA 2028</p>
+      <p class="hero-label">Paralympic Precision Rifle · Ireland · LA 2028</p>
       <h1 class="hero-title">Precision Under Pressure.<br>Execution Without Compromise.</h1>
-      <p class="hero-sub">I'm Kevin Doyle — an Irish precision rifle athlete building a world-class performance system
-        under real constraints.</p>
-      <div class="hero-actions">
-        <a href="#partner" class="btn btn-primary">Partner The Process</a>
-        <a href="#featured-video" class="btn btn-outline">Watch The Journey</a>
+      <p class="hero-sub">Irish precision rifle athlete. International competitor. Building toward LA 2028.</p>
+      <a href="#partner" class="btn btn-primary">Partner The Process</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+      <div>
+        <p class="eyebrow eyebrow--light">The Athlete</p>
+        <div class="rule"></div>
+        <h2 class="about-title">A precision athlete<br>operating at international level.</h2>
+        <div class="about-body">
+          <p>Kevin Doyle is an Irish Paralympic precision rifle athlete based in Ireland, competing internationally, and
+            building a structured pathway to LA 2028.</p>
+          <p>ZeroPoint is a performance system Kevin built and operates himself — a defined methodology for repeatable
+            execution under pressure. In October 2025, seven months after picking up the sport, he took it to
+            international competition for the first time. He came back with silver and a personal best score.</p>
+          <p>That is not a result. That is proof of concept.</p>
+          <p>Before sport, Kevin spent over a decade in corporate IT leadership across EMEA. That background informs how
+            this operation is run — with the same discipline, systems thinking, and accountability that high-performance
+            organisations demand.</p>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-row">
+          <span class="stat-label">Sport</span>
+          <span class="stat-value">Precision Rifle — Paralympic classification</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Nation</span>
+          <span class="stat-value">Ireland</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Result</span>
+          <span class="stat-value"><strong>Silver Medal · Personal Best</strong> — Welsh International Airgun
+            Championships, October 2025</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Current</span>
+          <span class="stat-value">International qualification campaign — Novi Sad, Serbia</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Target</span>
+          <span class="stat-value">LA 2028 Paralympic Games</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- PHILOSOPHY -->
   <section id="philosophy">
-    <div class="philosophy-grid">
+    <div class="philosophy-inner">
       <div>
-        <p class="section-label">What This Is</p>
+        <p class="eyebrow">The Process</p>
         <div class="rule"></div>
         <h2 class="philosophy-lead">I don't train for scores.<br>I build a system for performance.</h2>
       </div>
       <div class="philosophy-body">
-        <p>Every shot follows a defined process — controlled, repeatable, and refined over time.</p>
-        <p>This isn't about eliminating movement or chasing perfect conditions. It's about executing under pressure,
-          consistently and without compromise.</p>
-        <p>Every session, every competition, every decision follows a defined system — process-driven, pressure-tested,
-          and documented in full. This is not a highlights reel. This is the real work.</p>
+        <p>Every shot follows a defined process — controlled, repeatable, and refined over time. This is not about
+          eliminating movement or chasing perfect conditions.</p>
+        <p>It is about executing under pressure, consistently and without compromise. The score is a byproduct. The
+          process is the point.</p>
+        <p>Every session, every competition, every decision follows the same defined system. Not a highlights reel. The
+          real work, documented in full.</p>
       </div>
     </div>
   </section>
@@ -847,54 +898,74 @@
   <section id="system">
     <div class="system-inner">
       <div class="system-header">
-        <p class="section-label section-label--light">Performance System</p>
+        <p class="eyebrow eyebrow--light">Performance System</p>
         <h2 class="system-title">Performance is engineered.</h2>
         <p class="system-sub">It is built, not found.</p>
       </div>
       <div class="system-grid">
         <div class="system-card">
+          <p class="system-card-num">01</p>
           <h3 class="system-card-title">Process</h3>
-          <p class="system-card-body">Every shot follows a defined sequence, removing randomness and creating
-            consistency.</p>
+          <p class="system-card-body">Every shot follows a defined sequence, removing randomness and building
+            consistency across training and competition environments.</p>
         </div>
         <div class="system-card">
+          <p class="system-card-num">02</p>
           <h3 class="system-card-title">Discipline</h3>
-          <p class="system-card-body">Execution is maintained under pressure through repetition, control, and focus.</p>
+          <p class="system-card-body">Execution is maintained under pressure through repetition, deliberate control, and
+            a focus on the variable that can be managed — the process itself.</p>
         </div>
         <div class="system-card">
+          <p class="system-card-num">03</p>
           <h3 class="system-card-title">Repeatable Execution</h3>
-          <p class="system-card-body">Performance is measured by the ability to deliver the same standard, over and over
-            again.</p>
+          <p class="system-card-body">Performance is measured by the ability to deliver the same standard, in any
+            conditions, under any pressure. Structure, not circumstance, determines the outcome.</p>
         </div>
       </div>
-      <p class="system-footnote">This isn't about luck. It's about structure.</p>
     </div>
   </section>
 
-
   <!-- MISSION -->
   <section id="mission">
-    <div class="mission-grid">
+    <div class="mission-inner">
       <div>
-        <p class="section-label">Current Phase</p>
+        <p class="eyebrow">Current Phase</p>
         <div class="rule"></div>
-        <h2 class="mission-title">The Journey In Motion</h2>
-        <p class="mission-body">The immediate focus is international qualification — competing in Novi Sad to achieve
-          the Minimum Qualification Score, and progressing toward World Championships and World Cup events. This is
-          where the standard is proven.</p>
-        <ul class="mission-list">
-          <li>Competing for MQS in Novi Sad, Serbia</li>
-          <li>Building towards World Championship</li>
-          <li>Pathway to LA 2028 Paralympic Games</li>
-        </ul>
+        <h2 class="mission-title">International Qualification</h2>
+        <p class="mission-body">The immediate focus is achieving the Minimum Qualification Score at international
+          competition level. Novi Sad is the current proving ground. World Championship and World Cup events follow. LA
+          2028 is the objective.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">Mar 2025</span>
+            <span class="timeline-event">Began competitive shooting</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Oct 2025</span>
+            <span class="timeline-event"><strong>Silver Medal · Personal Best</strong> — Welsh International Airgun
+              Championships. First international test of the ZeroPoint system.</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <span class="timeline-event">MQS campaign — Novi Sad, Serbia</span>
+          </div>
+          <div class="timeline-item timeline-item--future">
+            <span class="timeline-date">2026–27</span>
+            <span class="timeline-event">World Championships · World Cup circuit</span>
+          </div>
+          <div class="timeline-item timeline-item--future">
+            <span class="timeline-date">LA 2028</span>
+            <span class="timeline-event">Paralympic Games — the target</span>
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="section-label">The Philosophy</p>
+      <div class="mission-quote-block">
+        <p class="eyebrow">The Philosophy</p>
         <div class="rule"></div>
         <p class="mission-quote">"Nothing was going through my mind. I was focused on my process."</p>
-        <p style="margin-top:2rem;font-size:0.95rem;font-weight:300;color:#444;line-height:1.8;">The principles behind
-          elite precision sport — repeatable execution, performance under constraint, discipline over impulse — are the
-          same principles that drive high performance in any organisation.</p>
+        <p class="mission-quote-sub">The principles behind elite precision sport — repeatable execution, performance
+          under constraint, discipline over impulse — are the same principles that drive high performance in any
+          organisation. Partners don't just get visibility. They get association with a philosophy that transfers.</p>
       </div>
     </div>
   </section>
@@ -903,44 +974,51 @@
   <section id="partner">
     <div class="partner-inner">
       <div class="partner-header">
-        <p class="section-label section-label--light">Partnership</p>
+        <p class="eyebrow eyebrow--light">Partnership</p>
+        <div class="rule"></div>
         <h2 class="partner-title">Partner With The Process</h2>
-        <p class="partner-lead">This is an invitation to be part of something built on discipline, execution, and the
-          pursuit of mastery. Partners don't just get visibility — they get association with a philosophy that
-          transfers.</p>
+        <p class="partner-lead">A structured partnership opportunity for organisations that value precision, discipline,
+          and the credibility that comes from association with a validated performance system on its way to the
+          Paralympic Games. A full partnership prospectus is available on request.</p>
       </div>
       <div class="partner-grid">
         <div class="partner-card">
-          <p class="partner-card-title">The Current Mission</p>
-          <p class="partner-card-body">International qualification — competing in Novi Sad to achieve the Minimum
-            Qualification Score, and progressing toward World Championships and World Cup events. This is where the
-            standard is proven.</p>
+          <p class="partner-card-title">The Timeline</p>
+          <p class="partner-card-body">MQS campaign underway in 2026. World Championship and World Cup circuit to
+            follow. LA 2028 Paralympic Games is the target. Partners enter now, at the qualification stage, and travel
+            the full journey to LA.</p>
         </div>
         <div class="partner-card">
-          <p class="partner-card-title">Where Support Goes</p>
-          <div class="partner-card-body">
-            <ul>
-              <li>International competition — travel, accommodation, entry fees</li>
-              <li>Equipment and performance development</li>
-              <li>Training and preparation</li>
-              <li>Building consistency at elite level</li>
-            </ul>
-          </div>
+          <p class="partner-card-title">What Investment Covers</p>
+          <ul class="partner-card-list">
+            <li>International competition — travel, accommodation, entry fees</li>
+            <li>Equipment and performance development</li>
+            <li>Training programme and preparation</li>
+            <li>Competition documentation and reporting</li>
+          </ul>
         </div>
         <div class="partner-card">
-          <p class="partner-card-title">Why It Matters</p>
-          <p class="partner-card-body">The principles behind elite precision sport — repeatable execution, performance
-            under constraint, discipline over impulse — are the same principles that drive high performance in any
-            organisation.</p>
+          <p class="partner-card-title">What Partners Receive</p>
+          <ul class="partner-card-list">
+            <li>Logo placement on competition kit and this website</li>
+            <li>Regular content features across LinkedIn and social channels</li>
+            <li>Event documentation and post-competition reporting</li>
+            <li>Association with a performance philosophy that transfers to business</li>
+          </ul>
         </div>
         <div class="partner-card">
-          <p class="partner-card-title">What This Is Built On</p>
-          <p class="partner-card-body">Process-driven, pressure-tested, and documented in full. Every session, every
-            competition, every decision follows a defined system. Not a highlights reel. The real work.</p>
+          <p class="partner-card-title">Why This Matters</p>
+          <p class="partner-card-body">ZeroPoint is not a concept. It has been tested under competition conditions and
+            returned a silver medal at international level. Partners are not backing potential — they are backing a
+            validated system on a documented pathway to LA 2028.</p>
         </div>
       </div>
-      <p class="partner-closing">If your organisation values precision, discipline, and execution — we should talk.</p>
-      <a href="#contact" class="btn btn-primary">Start A Conversation</a>
+      <div class="partner-closing">
+        <p class="partner-closing-text">ZeroPoint has been proven. The pathway to LA 2028 is underway. If your
+          organisation values precision, discipline, and execution — this is a conversation worth having. A partnership
+          prospectus is available on request.</p>
+        <a href="#contact" class="btn btn-primary">Start The Conversation</a>
+      </div>
     </div>
   </section>
 
@@ -948,16 +1026,19 @@
   <section id="contact">
     <div class="contact-inner">
       <div>
-        <p class="section-label">Contact</p>
+        <p class="eyebrow">Contact</p>
         <div class="rule"></div>
         <h2 class="contact-title">Start The Conversation</h2>
-        <p class="contact-body">Get in touch directly — for opportunities, partnerships, or serious enquiries.</p>
+        <p class="contact-body">Direct contact is preferred. Partnership enquiries, media requests, and serious
+          opportunities handled personally.</p>
         <a href="mailto:kevin@kevindoyleparalympian.com" class="contact-email">kevin@kevindoyleparalympian.com</a>
+        <p class="contact-response">Partnership enquiries responded to within 48 hours.</p>
       </div>
       <div class="contact-detail">
-        <p>Direct contact is preferred. If you are reaching out about a partnership, come prepared with context about
-          your organisation and what alignment looks like from your side. That makes the conversation more productive
-          for both parties.</p>
+        <p>If you are reaching out about a partnership, come prepared with context about your organisation and what
+          alignment looks like from your side. That makes the first conversation productive for both parties.</p>
+        <p>For media or speaking enquiries, include the nature of the opportunity and relevant dates. Everything is
+          handled directly — no intermediaries.</p>
       </div>
     </div>
   </section>
@@ -977,8 +1058,9 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-inner">
-      <p class="footer-copy">© Kevin Doyle · Precision Rifle Athlete · Built in the pursuit of mastery.</p>
+    <div class="footer-inner" style="max-width:var(--max-w);margin:0 auto;">
+      <p class="footer-copy">© Kevin Doyle · ZeroPoint Performance System · Precision Rifle Athlete · Built in the
+        pursuit of mastery.</p>
     </div>
   </footer>
 
