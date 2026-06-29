@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kevin Doyle | ZeroPoint — Precision Rifle Athlete</title>
-  <meta name="description" content="Precision Under Pressure. Execution Without Compromise. Irish Paralympic 10m Air Rifle athlete building toward LA 2028.">
+  <meta name="description"
+    content="Precision Under Pressure. Execution Without Compromise. Irish Paralympic 10m Air Rifle athlete building toward LA 2028.">
   <meta property="og:title" content="Kevin Doyle | ZeroPoint">
   <meta property="og:description" content="Precision Under Pressure. Execution Without Compromise.">
   <meta property="og:url" content="https://kevindoyleparalympian.com/">
@@ -16,19 +18,29 @@
   <style>
     /* ── TOKENS ─────────────────────────────────────── */
     :root {
-      --near-black:   #0A0A0A;
-      --cool-white:   #F5F7F9;
+      --near-black: #0A0A0A;
+      --cool-white: #F5F7F9;
       --primary-text: #111111;
-      --mid-grey:     #7A7F86;
-      --crimson:      #8B1E3F;
-      --font:         'Roboto', sans-serif;
-      --max-w:        1100px;
-      --pad:          5rem 1.5rem;
+      --mid-grey: #7A7F86;
+      --crimson: #8B1E3F;
+      --font: 'Roboto', sans-serif;
+      --max-w: 1100px;
+      --pad: 5rem 1.5rem;
     }
 
     /* ── RESET ──────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: var(--font);
       background: var(--cool-white);
@@ -37,8 +49,16 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
-    img { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     /* ── NAV ────────────────────────────────────────── */
     nav {
@@ -48,6 +68,7 @@
       background: var(--near-black);
       border-bottom: 1px solid #1e1e1e;
     }
+
     .nav-inner {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -57,6 +78,7 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .nav-brand {
       font-size: 13px;
       font-weight: 600;
@@ -65,11 +87,13 @@
       color: var(--cool-white);
       flex-shrink: 0;
     }
+
     .nav-links {
       display: flex;
       gap: 2rem;
       list-style: none;
     }
+
     .nav-links a {
       font-size: 14px;
       font-weight: 400;
@@ -77,7 +101,11 @@
       letter-spacing: 0.04em;
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--cool-white); }
+
+    .nav-links a:hover {
+      color: var(--cool-white);
+    }
+
     .nav-toggle {
       display: none;
       flex-direction: column;
@@ -87,6 +115,7 @@
       cursor: pointer;
       padding: 4px;
     }
+
     .nav-toggle span {
       display: block;
       width: 22px;
@@ -100,6 +129,7 @@
       margin: 0 auto;
       padding: 0 1.5rem;
     }
+
     .section-label {
       font-size: 11px;
       font-weight: 600;
@@ -108,13 +138,18 @@
       color: var(--mid-grey);
       margin-bottom: 1rem;
     }
-    .section-label--light { color: rgba(245,247,249,0.4); }
+
+    .section-label--light {
+      color: rgba(245, 247, 249, 0.4);
+    }
+
     .rule {
       width: 2.5rem;
       height: 2px;
       background: var(--crimson);
       margin-bottom: 2rem;
     }
+
     .btn {
       display: inline-block;
       font-family: var(--font);
@@ -125,24 +160,32 @@
       transition: opacity 0.2s;
       cursor: pointer;
     }
+
     .btn-primary {
       background: var(--crimson);
       color: var(--cool-white);
     }
-    .btn-primary:hover { opacity: 0.85; }
+
+    .btn-primary:hover {
+      opacity: 0.85;
+    }
+
     .btn-outline {
       background: transparent;
       color: var(--cool-white);
-      border: 1px solid rgba(245,247,249,0.3);
+      border: 1px solid rgba(245, 247, 249, 0.3);
       transition: border-color 0.2s;
     }
-    .btn-outline:hover { border-color: var(--cool-white); }
+
+    .btn-outline:hover {
+      border-color: var(--cool-white);
+    }
 
     /* ── HERO ───────────────────────────────────────── */
     #hero {
       background-color: var(--near-black);
       background-image:
-        linear-gradient(90deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.65) 60%, rgba(10,10,10,0.3) 100%),
+        linear-gradient(90deg, rgba(10, 10, 10, 0.92) 0%, rgba(10, 10, 10, 0.65) 60%, rgba(10, 10, 10, 0.3) 100%),
         url('https://kevindoyleparalympian.com/wp-content/uploads/2026/04/Video-Lead-In-Image.webp');
       background-position: center right;
       background-size: cover;
@@ -154,6 +197,7 @@
       position: relative;
       overflow: hidden;
     }
+
     #hero::before {
       content: '';
       position: absolute;
@@ -163,9 +207,10 @@
       width: 520px;
       height: 520px;
       border-radius: 50%;
-      border: 1px solid rgba(255,255,255,0.04);
+      border: 1px solid rgba(255, 255, 255, 0.04);
       pointer-events: none;
     }
+
     #hero::after {
       content: '';
       position: absolute;
@@ -175,10 +220,17 @@
       width: 320px;
       height: 320px;
       border-radius: 50%;
-      border: 1px solid rgba(255,255,255,0.06);
+      border: 1px solid rgba(255, 255, 255, 0.06);
       pointer-events: none;
     }
-    .hero-inner { max-width: var(--max-w); margin: 0 auto; position: relative; z-index: 1; }
+
+    .hero-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
     .hero-label {
       font-size: 12px;
       font-weight: 600;
@@ -187,6 +239,7 @@
       color: var(--crimson);
       margin-bottom: 1.5rem;
     }
+
     .hero-title {
       font-size: clamp(2rem, 5vw, 3.4rem);
       font-weight: 600;
@@ -195,6 +248,7 @@
       max-width: 680px;
       margin-bottom: 1.5rem;
     }
+
     .hero-sub {
       font-size: 1.1rem;
       font-weight: 300;
@@ -203,13 +257,19 @@
       margin-bottom: 2.5rem;
       line-height: 1.7;
     }
-    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
 
     /* ── PHILOSOPHY ─────────────────────────────────── */
     #philosophy {
       background: var(--cool-white);
       padding: var(--pad);
     }
+
     .philosophy-grid {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -218,6 +278,7 @@
       gap: 4rem;
       align-items: start;
     }
+
     .philosophy-lead {
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400;
@@ -225,35 +286,58 @@
       color: var(--primary-text);
       margin-bottom: 1.5rem;
     }
+
     .philosophy-body {
       font-size: 1rem;
       font-weight: 300;
       color: #444;
       line-height: 1.8;
     }
-    .philosophy-body p + p { margin-top: 1rem; }
+
+    .philosophy-body p+p {
+      margin-top: 1rem;
+    }
 
     /* ── PERFORMANCE SYSTEM ─────────────────────────── */
     #system {
       background: var(--near-black);
       padding: var(--pad);
     }
-    .system-inner { max-width: var(--max-w); margin: 0 auto; }
-    .system-header { margin-bottom: 3rem; }
+
+    .system-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .system-header {
+      margin-bottom: 3rem;
+    }
+
     .system-title {
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400;
       color: var(--cool-white);
       margin-bottom: 0.5rem;
     }
-    .system-sub { font-size: 1rem; font-weight: 300; color: var(--mid-grey); }
+
+    .system-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--mid-grey);
+    }
+
     .system-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
       background: #1e1e1e;
     }
-    .system-card { background: #111; padding: 2rem; }
+
+    .system-card {
+      background: #111;
+      padding: 2rem;
+    }
+
     .system-card-title {
       font-size: 1rem;
       font-weight: 600;
@@ -261,12 +345,14 @@
       margin-bottom: 1rem;
       letter-spacing: 0.04em;
     }
+
     .system-card-body {
       font-size: 0.9rem;
       font-weight: 300;
       color: var(--mid-grey);
       line-height: 1.7;
     }
+
     .system-footnote {
       margin-top: 2rem;
       font-size: 0.9rem;
@@ -281,19 +367,29 @@
       padding: var(--pad);
       border-top: 1px solid #e0e3e6;
     }
-    .featured-video-inner { max-width: var(--max-w); margin: 0 auto; }
-    .featured-video-header { margin-bottom: 2rem; }
+
+    .featured-video-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .featured-video-header {
+      margin-bottom: 2rem;
+    }
+
     .featured-video-title {
       font-size: clamp(1.3rem, 2.5vw, 1.75rem);
       font-weight: 400;
       color: var(--primary-text);
       margin-bottom: 0.5rem;
     }
+
     .featured-video-sub {
       font-size: 0.95rem;
       font-weight: 300;
       color: #555;
     }
+
     .video-embed-wrapper {
       position: relative;
       padding-bottom: 56.25%;
@@ -301,9 +397,11 @@
       overflow: hidden;
       background: #000;
     }
+
     .video-embed-wrapper iframe {
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       border: 0;
@@ -315,30 +413,45 @@
       padding: var(--pad);
       border-top: 1px solid #e0e3e6;
     }
-    .videos-inner { max-width: var(--max-w); margin: 0 auto; }
-    .videos-header { margin-bottom: 2.5rem; }
+
+    .videos-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .videos-header {
+      margin-bottom: 2.5rem;
+    }
+
     .videos-title {
       font-size: clamp(1.3rem, 2.5vw, 1.75rem);
       font-weight: 400;
       color: var(--primary-text);
     }
+
     .video-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
     }
+
     .video-card {
       background: var(--cool-white);
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       transition: box-shadow 0.2s;
     }
-    .video-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.14); }
+
+    .video-card:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+    }
+
     .video-card img {
       width: 100%;
       aspect-ratio: 16/9;
       object-fit: cover;
     }
+
     .video-card-title {
       padding: 1rem 1.2rem;
       font-size: 0.9rem;
@@ -353,6 +466,7 @@
       padding: var(--pad);
       border-top: 1px solid #e0e3e6;
     }
+
     .mission-grid {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -361,12 +475,14 @@
       gap: 4rem;
       align-items: start;
     }
+
     .mission-title {
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400;
       color: var(--primary-text);
       margin-bottom: 1.5rem;
     }
+
     .mission-body {
       font-size: 1rem;
       font-weight: 300;
@@ -374,7 +490,14 @@
       line-height: 1.8;
       margin-bottom: 2rem;
     }
-    .mission-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+
+    .mission-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
     .mission-list li {
       display: flex;
       align-items: flex-start;
@@ -383,6 +506,7 @@
       font-weight: 400;
       color: var(--primary-text);
     }
+
     .mission-list li::before {
       content: '';
       display: block;
@@ -393,6 +517,7 @@
       background: var(--crimson);
       margin-top: 0.55em;
     }
+
     .mission-quote {
       font-size: 1.5rem;
       font-weight: 300;
@@ -408,14 +533,23 @@
       background: var(--near-black);
       padding: var(--pad);
     }
-    .partner-inner { max-width: var(--max-w); margin: 0 auto; }
-    .partner-header { margin-bottom: 3.5rem; }
+
+    .partner-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .partner-header {
+      margin-bottom: 3.5rem;
+    }
+
     .partner-title {
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400;
       color: var(--cool-white);
       margin-bottom: 1rem;
     }
+
     .partner-lead {
       font-size: 1rem;
       font-weight: 300;
@@ -423,6 +557,7 @@
       max-width: 580px;
       line-height: 1.8;
     }
+
     .partner-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -430,7 +565,12 @@
       background: #1e1e1e;
       margin-bottom: 3rem;
     }
-    .partner-card { background: #111; padding: 2rem; }
+
+    .partner-card {
+      background: #111;
+      padding: 2rem;
+    }
+
     .partner-card-title {
       font-size: 0.85rem;
       font-weight: 600;
@@ -439,23 +579,27 @@
       color: var(--crimson);
       margin-bottom: 1rem;
     }
+
     .partner-card-body {
       font-size: 0.95rem;
       font-weight: 300;
       color: var(--mid-grey);
       line-height: 1.8;
     }
+
     .partner-card-body ul {
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
     }
+
     .partner-card-body ul li {
       display: flex;
       align-items: flex-start;
       gap: 0.6rem;
     }
+
     .partner-card-body ul li::before {
       content: '';
       display: block;
@@ -466,6 +610,7 @@
       background: var(--mid-grey);
       margin-top: 0.6em;
     }
+
     .partner-closing {
       font-size: 1.1rem;
       font-weight: 300;
@@ -481,6 +626,7 @@
       padding: var(--pad);
       border-top: 1px solid #e0e3e6;
     }
+
     .contact-inner {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -489,12 +635,14 @@
       gap: 4rem;
       align-items: start;
     }
+
     .contact-title {
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400;
       color: var(--primary-text);
       margin-bottom: 1rem;
     }
+
     .contact-body {
       font-size: 1rem;
       font-weight: 300;
@@ -502,13 +650,18 @@
       line-height: 1.8;
       margin-bottom: 2rem;
     }
+
     .contact-email {
       font-size: 1rem;
       font-weight: 500;
       color: var(--crimson);
       letter-spacing: 0.02em;
     }
-    .contact-email:hover { opacity: 0.8; }
+
+    .contact-email:hover {
+      opacity: 0.8;
+    }
+
     .contact-detail {
       font-size: 0.9rem;
       font-weight: 300;
@@ -526,6 +679,7 @@
       border-top: 1px solid #e0e3e6;
       border-bottom: 1px solid #e0e3e6;
     }
+
     .logo-band-inner {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -535,6 +689,7 @@
       gap: 5rem;
       flex-wrap: wrap;
     }
+
     .logo-band-inner img {
       height: 56px;
       width: auto;
@@ -543,17 +698,22 @@
       filter: grayscale(20%);
       transition: opacity 0.2s;
     }
-    .logo-band-inner img:hover { opacity: 1; }
+
+    .logo-band-inner img:hover {
+      opacity: 1;
+    }
 
     /* ── FOOTER ─────────────────────────────────────── */
     footer {
       background: #060606;
       padding: 1.75rem 1.5rem;
     }
+
     .footer-inner {
       max-width: var(--max-w);
       margin: 0 auto;
     }
+
     .footer-copy {
       font-size: 12px;
       font-weight: 400;
@@ -564,15 +724,32 @@
 
     /* ── RESPONSIVE ─────────────────────────────────── */
     @media (max-width: 900px) {
+
       .philosophy-grid,
       .mission-grid,
-      .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
-      .system-grid   { grid-template-columns: 1fr; }
-      .partner-grid  { grid-template-columns: 1fr; }
-      .video-grid    { grid-template-columns: 1fr 1fr; }
+      .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .system-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .partner-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .video-grid {
+        grid-template-columns: 1fr 1fr;
+      }
     }
+
     @media (max-width: 600px) {
-      :root { --pad: 3.5rem 1.25rem; }
+      :root {
+        --pad: 3.5rem 1.25rem;
+      }
+
       .nav-links {
         display: none;
         flex-direction: column;
@@ -586,15 +763,35 @@
         padding: 1rem 1.5rem;
         gap: 1rem;
       }
-      .nav-links.open { display: flex; }
-      .nav-toggle { display: flex; }
-      .video-grid { grid-template-columns: 1fr; }
-      .footer-inner { flex-direction: column; align-items: flex-start; }
-      .logo-band-inner { gap: 2.5rem; }
-      .logo-band-inner img { height: 40px; }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: flex;
+      }
+
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo-band-inner {
+        gap: 2.5rem;
+      }
+
+      .logo-band-inner img {
+        height: 40px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- NAV -->
@@ -619,7 +816,8 @@
     <div class="hero-inner">
       <p class="hero-label">Paralympic 10m Air Rifle · Ireland · LA 2028</p>
       <h1 class="hero-title">Precision Under Pressure.<br>Execution Without Compromise.</h1>
-      <p class="hero-sub">I'm Kevin Doyle — an Irish precision rifle athlete building a world-class performance system under real constraints.</p>
+      <p class="hero-sub">I'm Kevin Doyle — an Irish precision rifle athlete building a world-class performance system
+        under real constraints.</p>
       <div class="hero-actions">
         <a href="#partner" class="btn btn-primary">Partner The Process</a>
         <a href="#featured-video" class="btn btn-outline">Watch The Journey</a>
@@ -637,8 +835,10 @@
       </div>
       <div class="philosophy-body">
         <p>Every shot follows a defined process — controlled, repeatable, and refined over time.</p>
-        <p>This isn't about eliminating movement or chasing perfect conditions. It's about executing under pressure, consistently and without compromise.</p>
-        <p>Every session, every competition, every decision follows a defined system — process-driven, pressure-tested, and documented in full. This is not a highlights reel. This is the real work.</p>
+        <p>This isn't about eliminating movement or chasing perfect conditions. It's about executing under pressure,
+          consistently and without compromise.</p>
+        <p>Every session, every competition, every decision follows a defined system — process-driven, pressure-tested,
+          and documented in full. This is not a highlights reel. This is the real work.</p>
       </div>
     </div>
   </section>
@@ -654,7 +854,8 @@
       <div class="system-grid">
         <div class="system-card">
           <h3 class="system-card-title">Process</h3>
-          <p class="system-card-body">Every shot follows a defined sequence, removing randomness and creating consistency.</p>
+          <p class="system-card-body">Every shot follows a defined sequence, removing randomness and creating
+            consistency.</p>
         </div>
         <div class="system-card">
           <h3 class="system-card-title">Discipline</h3>
@@ -662,67 +863,14 @@
         </div>
         <div class="system-card">
           <h3 class="system-card-title">Repeatable Execution</h3>
-          <p class="system-card-body">Performance is measured by the ability to deliver the same standard, over and over again.</p>
+          <p class="system-card-body">Performance is measured by the ability to deliver the same standard, over and over
+            again.</p>
         </div>
       </div>
       <p class="system-footnote">This isn't about luck. It's about structure.</p>
     </div>
   </section>
 
-  <!-- FEATURED VIDEO -->
-  <section id="featured-video">
-    <div class="featured-video-inner">
-      <div class="featured-video-header">
-        <p class="section-label">The Foundation</p>
-        <h2 class="featured-video-title">The foundation of the system — where the journey begins</h2>
-        <p class="featured-video-sub">Every video documents one thing — the system behind consistent execution under pressure. Not highlights. Not results. The actual work.</p>
-      </div>
-      <div class="video-embed-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/5flmBg5h1Yg"
-          title="The Foundation — Kevin Doyle ZeroPoint"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- VIDEO GRID -->
-  <section id="videos">
-    <div class="videos-inner">
-      <div class="videos-header">
-        <p class="section-label">Inside The Process</p>
-        <h2 class="videos-title">The principles behind elite precision sport — documented.</h2>
-      </div>
-      <div class="video-grid">
-        <a href="https://kevindoyleparalympian.com/performance-is-engineered-not-motivated/" class="video-card">
-          <img src="https://kevindoyleparalympian.com/wp-content/uploads/2026/06/maxresdefault-1-1-1024x576.jpg" alt="Performance Is Engineered Not Motivated" loading="lazy">
-          <p class="video-card-title">Performance Is Engineered Not Motivated</p>
-        </a>
-        <a href="https://kevindoyleparalympian.com/pressure-reveals-the-truth/" class="video-card">
-          <img src="https://kevindoyleparalympian.com/wp-content/uploads/2026/06/maxresdefault-8-1024x576.jpg" alt="Pressure Reveals The Truth" loading="lazy">
-          <p class="video-card-title">Pressure Reveals The Truth</p>
-        </a>
-        <a href="https://kevindoyleparalympian.com/why-great-teams-protect-standards/" class="video-card">
-          <img src="https://kevindoyleparalympian.com/wp-content/uploads/2026/06/maxresdefault-7-1024x576.jpg" alt="Why Great Teams Protect Standards" loading="lazy">
-          <p class="video-card-title">Why Great Teams Protect Standards</p>
-        </a>
-        <a href="https://kevindoyleparalympian.com/what-if-your-problem-isnt-discipline-its-alignment/" class="video-card">
-          <img src="https://kevindoyleparalympian.com/wp-content/uploads/2026/06/maxresdefault-6-1024x576.webp" alt="What If Your Problem Isn't Discipline? It's Alignment." loading="lazy">
-          <p class="video-card-title">What If Your Problem Isn't Discipline? It's Alignment.</p>
-        </a>
-        <a href="https://kevindoyleparalympian.com/why-most-people-never-reach-mastery/" class="video-card">
-          <img src="https://kevindoyleparalympian.com/wp-content/uploads/2026/06/maxresdefault-5-1024x576.webp" alt="Why Most People Never Reach Mastery" loading="lazy">
-          <p class="video-card-title">Why Most People Never Reach Mastery</p>
-        </a>
-        <a href="https://kevindoyleparalympian.com/what-sport-taught-me-about-building-real-teams/" class="video-card">
-          <img src="https://kevindoyleparalympian.com/wp-content/uploads/2026/06/maxresdefault-4-1024x576.webp" alt="What Sport Taught Me About Building Real Teams" loading="lazy">
-          <p class="video-card-title">What Sport Taught Me About Building Real Teams</p>
-        </a>
-      </div>
-    </div>
-  </section>
 
   <!-- MISSION -->
   <section id="mission">
@@ -731,7 +879,9 @@
         <p class="section-label">Current Phase</p>
         <div class="rule"></div>
         <h2 class="mission-title">The Journey In Motion</h2>
-        <p class="mission-body">The immediate focus is international qualification — competing in Novi Sad to achieve the Minimum Qualification Score, and progressing toward World Championships and World Cup events. This is where the standard is proven.</p>
+        <p class="mission-body">The immediate focus is international qualification — competing in Novi Sad to achieve
+          the Minimum Qualification Score, and progressing toward World Championships and World Cup events. This is
+          where the standard is proven.</p>
         <ul class="mission-list">
           <li>Competing for MQS in Novi Sad, Serbia</li>
           <li>Building towards World Championship</li>
@@ -742,7 +892,9 @@
         <p class="section-label">The Philosophy</p>
         <div class="rule"></div>
         <p class="mission-quote">"Nothing was going through my mind. I was focused on my process."</p>
-        <p style="margin-top:2rem;font-size:0.95rem;font-weight:300;color:#444;line-height:1.8;">The principles behind elite precision sport — repeatable execution, performance under constraint, discipline over impulse — are the same principles that drive high performance in any organisation.</p>
+        <p style="margin-top:2rem;font-size:0.95rem;font-weight:300;color:#444;line-height:1.8;">The principles behind
+          elite precision sport — repeatable execution, performance under constraint, discipline over impulse — are the
+          same principles that drive high performance in any organisation.</p>
       </div>
     </div>
   </section>
@@ -753,12 +905,16 @@
       <div class="partner-header">
         <p class="section-label section-label--light">Partnership</p>
         <h2 class="partner-title">Partner With The Process</h2>
-        <p class="partner-lead">This is an invitation to be part of something built on discipline, execution, and the pursuit of mastery. Partners don't just get visibility — they get association with a philosophy that transfers.</p>
+        <p class="partner-lead">This is an invitation to be part of something built on discipline, execution, and the
+          pursuit of mastery. Partners don't just get visibility — they get association with a philosophy that
+          transfers.</p>
       </div>
       <div class="partner-grid">
         <div class="partner-card">
           <p class="partner-card-title">The Current Mission</p>
-          <p class="partner-card-body">International qualification — competing in Novi Sad to achieve the Minimum Qualification Score, and progressing toward World Championships and World Cup events. This is where the standard is proven.</p>
+          <p class="partner-card-body">International qualification — competing in Novi Sad to achieve the Minimum
+            Qualification Score, and progressing toward World Championships and World Cup events. This is where the
+            standard is proven.</p>
         </div>
         <div class="partner-card">
           <p class="partner-card-title">Where Support Goes</p>
@@ -773,11 +929,14 @@
         </div>
         <div class="partner-card">
           <p class="partner-card-title">Why It Matters</p>
-          <p class="partner-card-body">The principles behind elite precision sport — repeatable execution, performance under constraint, discipline over impulse — are the same principles that drive high performance in any organisation.</p>
+          <p class="partner-card-body">The principles behind elite precision sport — repeatable execution, performance
+            under constraint, discipline over impulse — are the same principles that drive high performance in any
+            organisation.</p>
         </div>
         <div class="partner-card">
           <p class="partner-card-title">What This Is Built On</p>
-          <p class="partner-card-body">Process-driven, pressure-tested, and documented in full. Every session, every competition, every decision follows a defined system. Not a highlights reel. The real work.</p>
+          <p class="partner-card-body">Process-driven, pressure-tested, and documented in full. Every session, every
+            competition, every decision follows a defined system. Not a highlights reel. The real work.</p>
         </div>
       </div>
       <p class="partner-closing">If your organisation values precision, discipline, and execution — we should talk.</p>
@@ -796,7 +955,9 @@
         <a href="mailto:kevin@kevindoyleparalympian.com" class="contact-email">kevin@kevindoyleparalympian.com</a>
       </div>
       <div class="contact-detail">
-        <p>Direct contact is preferred. If you are reaching out about a partnership, come prepared with context about your organisation and what alignment looks like from your side. That makes the conversation more productive for both parties.</p>
+        <p>Direct contact is preferred. If you are reaching out about a partnership, come prepared with context about
+          your organisation and what alignment looks like from your side. That makes the conversation more productive
+          for both parties.</p>
       </div>
     </div>
   </section>
@@ -804,9 +965,13 @@
   <!-- LOGO BAND -->
   <div class="logo-band">
     <div class="logo-band-inner">
-      <img src="https://kevindoyleparalympian.com/wp-content/uploads/2025/09/Target-Shooting-Ireland_Final_300-300x82.png" alt="Target Shooting Ireland">
-      <img src="https://kevindoyleparalympian.com/wp-content/uploads/2025/09/world-shooting-para-sports-300x300.jpg" alt="World Shooting Para Sport">
-      <img src="https://kevindoyleparalympian.com/wp-content/uploads/2025/09/ipc-300x69.png" alt="International Paralympic Committee">
+      <img
+        src="https://kevindoyleparalympian.com/wp-content/uploads/2025/09/Target-Shooting-Ireland_Final_300-300x82.png"
+        alt="Target Shooting Ireland">
+      <img src="https://kevindoyleparalympian.com/wp-content/uploads/2025/09/world-shooting-para-sports-300x300.jpg"
+        alt="World Shooting Para Sport">
+      <img src="https://kevindoyleparalympian.com/wp-content/uploads/2025/09/ipc-300x69.png"
+        alt="International Paralympic Committee">
     </div>
   </div>
 
@@ -818,4 +983,5 @@
   </footer>
 
 </body>
+
 </html>
