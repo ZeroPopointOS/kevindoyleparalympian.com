@@ -478,6 +478,9 @@
       padding: 1.25rem 0;
       border-bottom: 1px solid #e0e3e6;
       align-items: baseline;
+      border-left: 2px solid transparent;
+      padding-left: 1.1rem;
+      margin-left: -1.1rem;
     }
 
     .timeline-item:first-child {
@@ -511,6 +514,46 @@
 
     .timeline-item--future .timeline-date {
       color: rgba(122, 127, 134, 0.5);
+    }
+
+    /* Timeline status indicators */
+    .timeline-item--done {
+      border-left-color: var(--mid-grey);
+    }
+
+    .timeline-item--current {
+      border-left-color: var(--crimson);
+    }
+
+    .timeline-item--current .timeline-date {
+      color: var(--crimson);
+    }
+
+    .timeline-item--future {
+      border-left-color: #d8dbde;
+    }
+
+    .timeline-status {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-left: 0.6rem;
+      padding: 0.15rem 0.5rem;
+      border: 1px solid currentColor;
+    }
+
+    .timeline-item--current .timeline-status {
+      color: var(--crimson);
+    }
+
+    .timeline-item--done .timeline-status {
+      color: var(--mid-grey);
+    }
+
+    .timeline-item--future .timeline-status {
+      color: #b8bcc1;
     }
 
     /* Mission quote */
@@ -945,34 +988,35 @@
     </div>
   </section>
 
-  <!-- MISSION -->
+  <!-- ROAD TO LA -->
   <section id="mission">
     <div class="mission-inner">
       <div>
-        <p class="eyebrow">Current Phase</p>
+        <p class="eyebrow">The Pathway</p>
         <div class="rule"></div>
-        <h2 class="mission-title">International Qualification</h2>
-        <p class="mission-body">The immediate focus is the WSPS World Cup in Al Ain, UAE this December — proposed as a
-          direct LA 2028 quota allocation event. LA 2028 is the objective.
+        <h2 class="mission-title">Road to LA 2028</h2>
+        <p class="mission-body">A fixed target, worked to a defined schedule. Each stage is a checkpoint —
+          not a highlight, a step in the qualification pathway.
         </p>
         <div class="timeline">
-          <div class="timeline-item">
+          <div class="timeline-item timeline-item--done">
             <span class="timeline-date">Mar 2025</span>
-            <span class="timeline-event">Began competitive shooting</span>
+            <span class="timeline-event">Began competitive shooting<span class="timeline-status">Complete</span></span>
           </div>
-          <div class="timeline-item">
+          <div class="timeline-item timeline-item--done">
             <span class="timeline-date">Oct 2025</span>
             <span class="timeline-event"><strong>Silver Medal · Personal Best</strong> — Welsh International Airgun
-              Championships. First international test of the ZeroPoint system.</span>
+              Championships. First international test of the ZeroPoint system.<span
+                class="timeline-status">Complete</span></span>
           </div>
-          <div class="timeline-item timeline-item--future">
+          <div class="timeline-item timeline-item--current">
             <span class="timeline-date">Dec 2026</span>
             <span class="timeline-event">WSPS World Cup — Al Ain, UAE. Proposed LA 2028 direct quota allocation
-              event.</span>
+              event.<span class="timeline-status">In Progress</span></span>
           </div>
           <div class="timeline-item timeline-item--future">
             <span class="timeline-date">LA 2028</span>
-            <span class="timeline-event">Paralympic Games — the target</span>
+            <span class="timeline-event">Paralympic Games — the target<span class="timeline-status">Target</span></span>
           </div>
         </div>
       </div>
