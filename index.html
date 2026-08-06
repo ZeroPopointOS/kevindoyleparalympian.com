@@ -207,7 +207,7 @@
       background-position: center right;
       background-size: cover;
       background-repeat: no-repeat;
-      min-height: 100vh;
+      min-height: 92vh;
       display: flex;
       align-items: center;
       padding: 0 1.5rem;
@@ -271,12 +271,17 @@
       font-size: 1.05rem;
       font-weight: 300;
       color: var(--mid-grey);
-      max-width: 480px;
+      max-width: 500px;
       margin-bottom: 3rem;
       line-height: 1.75;
     }
 
-    /* ── ABOUT ──────────────────────────────────────── */
+    .hero-sub strong {
+      font-weight: 500;
+      color: rgba(245, 247, 249, 0.85);
+    }
+
+    /* ── IDENTITY (merged About + Philosophy) ───────── */
     #about {
       background: var(--near-black);
       padding: var(--section-pad);
@@ -347,41 +352,7 @@
       color: var(--cool-white);
     }
 
-    /* ── PHILOSOPHY ─────────────────────────────────── */
-    #philosophy {
-      background: var(--cool-white);
-      padding: var(--section-pad);
-    }
-
-    .philosophy-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: start;
-    }
-
-    .philosophy-lead {
-      font-size: clamp(1.4rem, 3vw, 2rem);
-      font-weight: 400;
-      line-height: 1.3;
-      color: var(--primary-text);
-      margin-bottom: 1.5rem;
-    }
-
-    .philosophy-body {
-      font-size: 0.975rem;
-      font-weight: 300;
-      color: #444;
-      line-height: 1.85;
-    }
-
-    .philosophy-body p+p {
-      margin-top: 1rem;
-    }
-
-    /* ── PERFORMANCE SYSTEM ─────────────────────────── */
+    /* ── ZERO POINT OS ──────────────────────────────── */
     #system {
       background: #0e0e0e;
       padding: var(--section-pad);
@@ -393,6 +364,7 @@
     }
 
     .system-header {
+      max-width: 640px;
       margin-bottom: 3.5rem;
     }
 
@@ -400,51 +372,54 @@
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400;
       color: var(--cool-white);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
     }
 
     .system-sub {
-      font-size: 0.95rem;
+      font-size: 0.975rem;
       font-weight: 300;
       color: var(--mid-grey);
+      line-height: 1.8;
     }
 
     .system-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 1px;
       background: #1e1e1e;
     }
 
     .system-card {
       background: #111;
-      padding: 2.25rem 2rem;
+      padding: 1.75rem 1.4rem;
     }
 
     .system-card-num {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.2em;
+      font-size: 34px;
+      font-weight: 300;
+      letter-spacing: 0;
       color: var(--crimson);
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
+      line-height: 1;
+      opacity: 0.85;
     }
 
     .system-card-title {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 600;
       color: var(--cool-white);
-      margin-bottom: 0.85rem;
+      margin-bottom: 0.6rem;
       letter-spacing: 0.02em;
     }
 
     .system-card-body {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: 300;
       color: var(--mid-grey);
-      line-height: 1.75;
+      line-height: 1.6;
     }
 
-    /* ── MISSION / TIMELINE ─────────────────────────── */
+    /* ── PATHWAY ─────────────────────────────────────── */
     #mission {
       background: var(--cool-white);
       padding: var(--section-pad);
@@ -633,7 +608,7 @@
 
     .partner-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 1px;
       background: #1e1e1e;
       margin-bottom: 3.5rem;
@@ -820,7 +795,6 @@
     @media (max-width: 900px) {
 
       .about-inner,
-      .philosophy-inner,
       .mission-inner,
       .contact-inner {
         grid-template-columns: 1fr;
@@ -828,7 +802,7 @@
       }
 
       .system-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .partner-grid {
@@ -866,6 +840,10 @@
         display: flex;
       }
 
+      .system-grid {
+        grid-template-columns: 1fr;
+      }
+
       .partner-closing {
         flex-direction: column;
         align-items: flex-start;
@@ -889,44 +867,43 @@
       </button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#philosophy">The Process</a></li>
-        <li><a href="#mission">Mission</a></li>
+        <li><a href="#system">The System</a></li>
+        <li><a href="#mission">Pathway</a></li>
         <li><a href="#partner">Partner</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO — carries the "why", not just the identity -->
   <section id="hero">
     <div class="hero-inner">
       <p class="hero-label">Paralympic Precision Rifle · Ireland · LA 2028</p>
       <h1 class="hero-title">Precision Under Pressure.<br>Execution Without Compromise.</h1>
-      <p class="hero-sub">Irish precision rifle athlete. International competitor. Building toward LA 2028.</p>
+      <p class="hero-sub"><strong>ZeroPoint is a performance system, built and proven under competition
+          pressure.</strong> It doesn't announce itself. It needs a partner willing to put it on the stages that
+        matter — starting with the World Cup in December 2026.</p>
       <a href="#partner" class="btn btn-primary">Partner The Process</a>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- IDENTITY (About + Philosophy, merged) -->
   <section id="about">
     <div class="about-inner">
       <div>
-        <p class="eyebrow eyebrow--light">The Athlete</p>
+        <p class="eyebrow eyebrow--light">The Operator</p>
         <div class="rule"></div>
-        <h2 class="about-title">A precision athlete<br>operating at international level.</h2>
+        <h2 class="about-title">A system, not a story.</h2>
         <div class="about-body">
-          <p>Kevin Doyle is an Irish Paralympic precision rifle athlete based in Ireland, competing internationally, and
-            building a structured pathway to LA 2028.</p>
-          <p>Kevin competes in SH2, the Paralympic rifle classification for athletes whose upper-limb impairment
-            requires a shooting stand to support the rifle. He is Ireland's sole competitor in this classification.</p>
-          <p>ZeroPoint is a performance system Kevin built and operates himself — a defined methodology for repeatable
-            execution under pressure. In October 2025, seven months after picking up the sport, he took it to
-            international competition for the first time. He came back with silver and a personal best score.</p>
-          <p>That is not a result. That is proof of concept.</p>
-          <p>Before sport, Kevin spent three decades in corporate IT leadership — standing up infrastructure for
-            multinational greenfield sites entering Ireland, then managing IT operations across Europe, the Middle East,
-            and Africa. That background informs how this operation is run, with the same discipline, systems thinking,
-            and accountability that high-performance organisations demand.</p>
+          <p>Kevin Doyle is Ireland's only SH2-classified precision rifle athlete, competing internationally on a
+            defined pathway to LA 2028.</p>
+          <p>ZeroPoint is the system behind that pathway — five stages, engineered for one outcome: the same
+            standard, repeated, under any pressure. The score is a byproduct. The process is the point.</p>
+          <p>Seven months after picking up the sport, Kevin took ZeroPoint to international competition for the
+            first time. He came back with silver and a personal best. That's not a result — that's proof of
+            concept.</p>
+          <p>Before sport, three decades in corporate IT leadership — standing up infrastructure across Europe, the
+            Middle East, and Africa. Same discipline, same systems thinking, now applied to a different target.</p>
         </div>
       </div>
       <div class="about-stats">
@@ -944,7 +921,7 @@
         </div>
         <div class="stat-row">
           <span class="stat-label">Result</span>
-          <span class="stat-value"><strong>Silver Medal . Personal Best</strong> — Welsh International Airgun
+          <span class="stat-value"><strong>Silver Medal · Personal Best</strong> — Welsh International Airgun
             Championships, October 2025</span>
         </div>
         <div class="stat-row">
@@ -960,57 +937,45 @@
     </div>
   </section>
 
-  <!-- PHILOSOPHY -->
-  <section id="philosophy">
-    <div class="philosophy-inner">
-      <div>
-        <p class="eyebrow">The Process</p>
-        <div class="rule"></div>
-        <h2 class="philosophy-lead">I don't train for scores.<br>I build a system for performance.</h2>
-      </div>
-      <div class="philosophy-body">
-        <p>Every shot follows a defined process — controlled, repeatable, and refined over time. This is not about
-          eliminating movement or chasing perfect conditions.</p>
-        <p>It is about executing under pressure, consistently and without compromise. The score is a byproduct. The
-          process is the point.</p>
-        <p>Every session, every competition, every decision follows the same defined system. Not a highlights reel. The
-          real work, documented in full.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PERFORMANCE SYSTEM -->
+  <!-- ZERO POINT OS — five stages, six words each. Placeholder copy pending Kevin's real stage names. -->
   <section id="system">
     <div class="system-inner">
       <div class="system-header">
-        <p class="eyebrow eyebrow--light">Performance System</p>
-        <h2 class="system-title">Performance is engineered.</h2>
-        <p class="system-sub">It is built, not found.</p>
+        <p class="eyebrow eyebrow--light">The System</p>
+        <h2 class="system-title">ZeroPoint OS</h2>
+        <p class="system-sub">Five stages. Not a training log — the operating system behind every shot.</p>
       </div>
       <div class="system-grid">
         <div class="system-card">
           <p class="system-card-num">01</p>
-          <h3 class="system-card-title">Process</h3>
-          <p class="system-card-body">Every shot follows a defined sequence, removing randomness and building
-            consistency across training and competition environments.</p>
+          <h3 class="system-card-title">Lock In The Outcome</h3>
+          <p class="system-card-body">The outcome is fixed before execution.</p>
         </div>
         <div class="system-card">
           <p class="system-card-num">02</p>
-          <h3 class="system-card-title">Discipline</h3>
-          <p class="system-card-body">Execution is maintained under pressure through repetition, deliberate control, and
-            a focus on the variable that can be managed — the process itself.</p>
+          <h3 class="system-card-title">Lock The Process</h3>
+          <p class="system-card-body">The method never changes under pressure.</p>
         </div>
         <div class="system-card">
           <p class="system-card-num">03</p>
-          <h3 class="system-card-title">Repeatable Execution</h3>
-          <p class="system-card-body">Performance is measured by the ability to deliver the same standard, in any
-            conditions, under any pressure. Structure, not circumstance, determines the outcome.</p>
+          <h3 class="system-card-title">Control The Environment</h3>
+          <p class="system-card-body">Every controllable variable is accounted for.</p>
+        </div>
+        <div class="system-card">
+          <p class="system-card-num">04</p>
+          <h3 class="system-card-title">Feedback Loops</h3>
+          <p class="system-card-body">Every shot is measured and reviewed.</p>
+        </div>
+        <div class="system-card">
+          <p class="system-card-num">05</p>
+          <h3 class="system-card-title">100% Accountability</h3>
+          <p class="system-card-body">Full ownership of every result, always.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ROAD TO LA -->
+  <!-- PATHWAY -->
   <section id="mission">
     <div class="mission-inner">
       <div>
@@ -1090,12 +1055,6 @@
             <li>Event documentation and post-competition reporting</li>
             <li>Association with a performance philosophy that transfers to business</li>
           </ul>
-        </div>
-        <div class="partner-card">
-          <p class="partner-card-title">Why This Matters</p>
-          <p class="partner-card-body">ZeroPoint is not a concept. It has been tested under competition conditions and
-            returned a silver medal at international level. Partners are not backing potential — they are backing a
-            validated system on a documented pathway to LA 2028.</p>
         </div>
       </div>
       <div class="partner-closing">
