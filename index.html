@@ -39,8 +39,14 @@
   <link rel="canonical" href="https://kevindoyleparalympian.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
-    rel="stylesheet">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+      rel="stylesheet">
+  </noscript>
+  <link rel="preload" as="image" href="assets/img/Video-Lead-In-Image.webp" fetchpriority="high">
   <link rel="stylesheet" href="assets/CSS/styles.css">
 
   <script type="application/ld+json">
@@ -83,225 +89,236 @@
     </div>
   </nav>
 
-  <!-- HERO — carries the "why", not just the identity -->
-  <section id="hero">
-    <div class="hero-inner">
-      <p class="hero-label">Paralympic Precision Rifle · Ireland · LA 2028</p>
-      <h1 class="hero-title">Precision Under Pressure.<br>Execution Without Compromise.</h1>
-      <p class="hero-sub"><strong>ZeroPoint is a performance system, built and proven under competition
-          pressure.</strong> It doesn't announce itself. It needs a partner willing to put it on the stages that
-        matter — starting with the World Cup in December 2026.</p>
-      <a href="#partner" class="btn btn-primary">Partner The Process</a>
-    </div>
-  </section>
+  <main>
 
-  <!-- IDENTITY (About + Philosophy, merged) -->
-  <section id="about">
-    <div class="about-inner">
-      <div>
-        <p class="eyebrow eyebrow--light">The Operator</p>
-        <div class="rule"></div>
-        <h2 class="about-title">A system, not a story.</h2>
-        <div class="about-body">
-          <p>Kevin Doyle is Ireland's only SH2-classified precision rifle athlete, competing internationally on a
-            defined pathway to LA 2028.</p>
-          <p>ZeroPoint is the system behind that pathway — five stages, engineered for one outcome: the same
-            standard, repeated, under any pressure. The score is a byproduct. The process is the point.</p>
-          <p>Seven months after picking up the sport, Kevin took ZeroPoint to international competition for the
-            first time. He came back with silver and a personal best. That's not a result — that's proof of
-            concept.</p>
-          <p>Before sport, three decades in corporate IT leadership — standing up infrastructure across Europe, the
-            Middle East, and Africa. Same discipline, same systems thinking, now applied to a different target.</p>
-        </div>
+    <!-- HERO — carries the "why", not just the identity -->
+    <section id="hero">
+      <div class="hero-inner">
+        <p class="hero-label">Paralympic Precision Rifle · Ireland · LA 2028</p>
+        <h1 class="hero-title">Precision Under Pressure.<br>Execution Without Compromise.</h1>
+        <p class="hero-sub"><strong>ZeroPoint is a performance system, built and proven under competition
+            pressure.</strong> It doesn't announce itself. It needs a partner willing to put it on the stages that
+          matter — starting with the World Cup in December 2026.</p>
+        <a href="#partner" class="btn btn-primary">Partner The Process</a>
       </div>
-      <div class="about-stats">
-        <div class="stat-row">
-          <span class="stat-label">Sport</span>
-          <span class="stat-value">Precision Rifle — SH2 Classification</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Nation</span>
-          <span class="stat-value">Ireland</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Started</span>
-          <span class="stat-value">March 2025</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Result</span>
-          <span class="stat-value"><strong>Silver Medal · Personal Best</strong> — Welsh International Airgun
-            Championships, October 2025</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Current</span>
-          <span class="stat-value">WSPS World Cup, Al Ain, UAE (December 2026) — a proposed LA 2028 direct quota
-            allocation event</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Target</span>
-          <span class="stat-value">LA 2028 Paralympic Games</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ZERO POINT OS — homepage summary; full five-stage detail lives on zeropoint-os.html -->
-  <section id="system">
-    <div class="system-inner">
-      <div class="system-header">
-        <p class="eyebrow eyebrow--light">The System</p>
-        <h2 class="system-title">ZeroPoint OS</h2>
-        <p class="system-sub">Five stages. Not a training log — the operating system behind every shot.</p>
-      </div>
-      <div class="system-grid">
-        <div class="system-card">
-          <p class="system-card-num">01</p>
-          <h3 class="system-card-title">Lock In The Outcome</h3>
-          <p class="system-card-body">The outcome is fixed before execution.</p>
-        </div>
-        <div class="system-card">
-          <p class="system-card-num">02</p>
-          <h3 class="system-card-title">Lock The Process</h3>
-          <p class="system-card-body">The method never changes under pressure.</p>
-        </div>
-        <div class="system-card">
-          <p class="system-card-num">03</p>
-          <h3 class="system-card-title">Control The Environment</h3>
-          <p class="system-card-body">Every controllable variable is accounted for.</p>
-        </div>
-        <div class="system-card">
-          <p class="system-card-num">04</p>
-          <h3 class="system-card-title">Feedback Loops</h3>
-          <p class="system-card-body">Every shot is measured and reviewed.</p>
-        </div>
-        <div class="system-card">
-          <p class="system-card-num">05</p>
-          <h3 class="system-card-title">100% Accountability</h3>
-        </div>
-        <div class="system-cta">
-          <a href="zeropoint-os.html" class="system-cta-link">The full system &rarr;</a>
-        </div>
-      </div>
-  </section>
-
-  <!-- PATHWAY -->
-  <section id="mission">
-    <div class="mission-inner">
-      <div>
-        <p class="eyebrow">The Pathway</p>
-        <div class="rule"></div>
-        <h2 class="mission-title">Road to LA 2028</h2>
-        <p class="mission-body">A fixed target, worked to a defined schedule. Each stage is a checkpoint —
-          not a highlight, a step in the qualification pathway.
-        </p>
-        <div class="timeline">
-          <div class="timeline-item timeline-item--done">
-            <span class="timeline-date">Mar 2025</span>
-            <span class="timeline-event">Began competitive shooting<span class="timeline-status">Complete</span></span>
+    <!-- IDENTITY (About + Philosophy, merged) -->
+    <section id="about">
+      <div class="about-inner">
+        <div>
+          <p class="eyebrow eyebrow--light">The Operator</p>
+          <div class="rule"></div>
+          <h2 class="about-title">A system, not a story.</h2>
+          <div class="about-body">
+            <p>Kevin Doyle is Ireland's only SH2-classified precision rifle athlete, competing internationally on a
+              defined pathway to LA 2028.</p>
+            <p>ZeroPoint is the system behind that pathway — five stages, engineered for one outcome: the same
+              standard, repeated, under any pressure. The score is a byproduct. The process is the point.</p>
+            <p>Seven months after picking up the sport, Kevin took ZeroPoint to international competition for the
+              first time. He came back with silver and a personal best. That's not a result — that's proof of
+              concept.</p>
+            <p>Before sport, three decades in corporate IT leadership — standing up infrastructure across Europe, the
+              Middle East, and Africa. Same discipline, same systems thinking, now applied to a different target.</p>
           </div>
-          <div class="timeline-item timeline-item--done">
-            <span class="timeline-date">Oct 2025</span>
-            <span class="timeline-event"><strong>Silver Medal · Personal Best</strong> — Welsh International Airgun
-              Championships. First international test of the ZeroPoint system.<span
-                class="timeline-status">Complete</span></span>
+        </div>
+        <div class="about-stats">
+          <div class="stat-row">
+            <span class="stat-label">Sport</span>
+            <span class="stat-value">Precision Rifle — SH2 Classification</span>
           </div>
-          <div class="timeline-item timeline-item--current">
-            <span class="timeline-date">Dec 2026</span>
-            <span class="timeline-event">WSPS World Cup — Al Ain, UAE. Proposed LA 2028 direct quota allocation
-              event.<span class="timeline-status">In Progress</span></span>
+          <div class="stat-row">
+            <span class="stat-label">Nation</span>
+            <span class="stat-value">Ireland</span>
           </div>
-          <div class="timeline-item timeline-item--future">
-            <span class="timeline-date">LA 2028</span>
-            <span class="timeline-event">Paralympic Games — the target<span class="timeline-status">Target</span></span>
+          <div class="stat-row">
+            <span class="stat-label">Started</span>
+            <span class="stat-value">March 2025</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Result</span>
+            <span class="stat-value"><strong>Silver Medal · Personal Best</strong> — Welsh International Airgun
+              Championships, October 2025</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Current</span>
+            <span class="stat-value">WSPS World Cup, Al Ain, UAE (December 2026) — a proposed LA 2028 direct quota
+              allocation event</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Target</span>
+            <span class="stat-value">LA 2028 Paralympic Games</span>
           </div>
         </div>
       </div>
-      <div class="mission-quote-block">
-        <p class="eyebrow">The Philosophy</p>
-        <div class="rule"></div>
-        <p class="mission-quote">"I was so far into the process, I had to be told I had finished."</p>
-        <p class="mission-quote-sub"><em>Welsh International Airgun Championships, October 2025.</em> The
-          principles behind elite precision sport — repeatable execution, performance under constraint,
-          discipline over impulse — are the same principles that drive high performance in any organisation.
-          Partners don't just get visibility. They get association with a philosophy that transfers.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PARTNER -->
-  <section id="partner">
-    <div class="partner-inner">
-      <div class="partner-header">
-        <p class="eyebrow eyebrow--light">Partnership</p>
-        <div class="rule"></div>
-        <h2 class="partner-title">Partner With The Process</h2>
-        <p class="partner-lead">A structured partnership opportunity for organisations that value precision, discipline,
-          and the credibility that comes from association with a validated performance system on its way to the
-          Paralympic Games. A full partnership prospectus is available on request.</p>
-      </div>
-      <div class="partner-grid">
-        <div class="partner-card">
-          <p class="partner-card-title">The Timeline</p>
-          <p class="partner-card-body">WSPS World Cup, Al Ain, December 2026 — proposed as a direct LA 2028 quota
-            allocation event — is the next milestone. LA 2028 Paralympic Games is the target. Partners enter now,
-            ahead of that result, and travel the full journey to LA.
+    <!-- ZERO POINT OS — homepage summary; full five-stage detail lives on zeropoint-os.html -->
+    <section id="system">
+      <div class="system-inner">
+        <div class="system-header">
+          <p class="eyebrow eyebrow--light">The System</p>
+          <h2 class="system-title">ZeroPoint OS</h2>
+          <p class="system-sub">Five stages. Not a training log — the operating system behind every shot.</p>
+        </div>
+        <div class="system-grid">
+          <div class="system-card">
+            <p class="system-card-num">01</p>
+            <h3 class="system-card-title">Lock In The Outcome</h3>
+            <p class="system-card-body">The outcome is fixed before execution.</p>
+          </div>
+          <div class="system-card">
+            <p class="system-card-num">02</p>
+            <h3 class="system-card-title">Lock The Process</h3>
+            <p class="system-card-body">The method never changes under pressure.</p>
+          </div>
+          <div class="system-card">
+            <p class="system-card-num">03</p>
+            <h3 class="system-card-title">Control The Environment</h3>
+            <p class="system-card-body">Every controllable variable is accounted for.</p>
+          </div>
+          <div class="system-card">
+            <p class="system-card-num">04</p>
+            <h3 class="system-card-title">Feedback Loops</h3>
+            <p class="system-card-body">Every shot is measured and reviewed.</p>
+          </div>
+          <div class="system-card">
+            <p class="system-card-num">05</p>
+            <h3 class="system-card-title">100% Accountability</h3>
+          </div>
+          <div class="system-cta">
+            <a href="zeropoint-os.html" class="system-cta-link">The full system &rarr;</a>
+          </div>
+        </div>
+    </section>
+
+    <!-- PATHWAY -->
+    <section id="mission">
+      <div class="mission-inner">
+        <div>
+          <p class="eyebrow">The Pathway</p>
+          <div class="rule"></div>
+          <h2 class="mission-title">Road to LA 2028</h2>
+          <p class="mission-body">A fixed target, worked to a defined schedule. Each stage is a checkpoint —
+            not a highlight, a step in the qualification pathway.
           </p>
+          <div class="timeline">
+            <div class="timeline-item timeline-item--done">
+              <span class="timeline-date">Mar 2025</span>
+              <span class="timeline-event">Began competitive shooting<span
+                  class="timeline-status">Complete</span></span>
+            </div>
+            <div class="timeline-item timeline-item--done">
+              <span class="timeline-date">Oct 2025</span>
+              <span class="timeline-event"><strong>Silver Medal · Personal Best</strong> — Welsh International Airgun
+                Championships. First international test of the ZeroPoint system.<span
+                  class="timeline-status">Complete</span></span>
+            </div>
+            <div class="timeline-item timeline-item--current">
+              <span class="timeline-date">Dec 2026</span>
+              <span class="timeline-event">WSPS World Cup — Al Ain, UAE. Proposed LA 2028 direct quota allocation
+                event.<span class="timeline-status">In Progress</span></span>
+            </div>
+            <div class="timeline-item timeline-item--future">
+              <span class="timeline-date">LA 2028</span>
+              <span class="timeline-event">Paralympic Games — the target<span
+                  class="timeline-status">Target</span></span>
+            </div>
+          </div>
         </div>
-        <div class="partner-card">
-          <p class="partner-card-title">What Investment Covers</p>
-          <ul class="partner-card-list">
-            <li>International competition — travel, accommodation, entry fees</li>
-            <li>Equipment and performance development</li>
-            <li>Training programme and preparation</li>
-            <li>Competition documentation and reporting</li>
-          </ul>
-        </div>
-        <div class="partner-card">
-          <p class="partner-card-title">What Partners Receive</p>
-          <ul class="partner-card-list">
-            <li>Logo placement on competition kit and this website</li>
-            <li>Regular content features across LinkedIn and social channels</li>
-            <li>Event documentation and post-competition reporting</li>
-            <li>Association with a performance philosophy that transfers to business</li>
-          </ul>
+        <div class="mission-quote-block">
+          <p class="eyebrow">The Philosophy</p>
+          <div class="rule"></div>
+          <p class="mission-quote">"I was so far into the process, I had to be told I had finished."</p>
+          <p class="mission-quote-sub"><em>Welsh International Airgun Championships, October 2025.</em> The
+            principles behind elite precision sport — repeatable execution, performance under constraint,
+            discipline over impulse — are the same principles that drive high performance in any organisation.
+            Partners don't just get visibility. They get association with a philosophy that transfers.</p>
         </div>
       </div>
-      <div class="partner-closing">
-        <p class="partner-closing-text">ZeroPoint has been proven. The pathway to LA 2028 is underway. If your
-          organisation values precision, discipline, and execution — this is a conversation worth having. A partnership
-          prospectus is available on request.</p>
-        <a href="#contact" class="btn btn-primary">Start The Conversation</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact-inner">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <div class="rule"></div>
-        <h2 class="contact-title">Start The Conversation</h2>
-        <p class="contact-body">Direct contact is preferred. Partnership enquiries, media requests, and serious
-          opportunities handled personally.</p>
-        <a href="mailto:kevin@kevindoyleparalympian.com" class="contact-email">kevin@kevindoyleparalympian.com</a>
-        <p class="contact-response">Partnership enquiries responded to within 48 hours.</p>
+    <!-- PARTNER -->
+    <section id="partner">
+      <div class="partner-inner">
+        <div class="partner-header">
+          <p class="eyebrow eyebrow--light">Partnership</p>
+          <div class="rule"></div>
+          <h2 class="partner-title">Partner With The Process</h2>
+          <p class="partner-lead">A structured partnership opportunity for organisations that value precision,
+            discipline,
+            and the credibility that comes from association with a validated performance system on its way to the
+            Paralympic Games. A full partnership prospectus is available on request.</p>
+        </div>
+        <div class="partner-grid">
+          <div class="partner-card">
+            <p class="partner-card-title">The Timeline</p>
+            <p class="partner-card-body">WSPS World Cup, Al Ain, December 2026 — proposed as a direct LA 2028 quota
+              allocation event — is the next milestone. LA 2028 Paralympic Games is the target. Partners enter now,
+              ahead of that result, and travel the full journey to LA.
+            </p>
+          </div>
+          <div class="partner-card">
+            <p class="partner-card-title">What Investment Covers</p>
+            <ul class="partner-card-list">
+              <li>International competition — travel, accommodation, entry fees</li>
+              <li>Equipment and performance development</li>
+              <li>Training programme and preparation</li>
+              <li>Competition documentation and reporting</li>
+            </ul>
+          </div>
+          <div class="partner-card">
+            <p class="partner-card-title">What Partners Receive</p>
+            <ul class="partner-card-list">
+              <li>Logo placement on competition kit and this website</li>
+              <li>Regular content features across LinkedIn and social channels</li>
+              <li>Event documentation and post-competition reporting</li>
+              <li>Association with a performance philosophy that transfers to business</li>
+            </ul>
+          </div>
+        </div>
+        <div class="partner-closing">
+          <p class="partner-closing-text">ZeroPoint has been proven. The pathway to LA 2028 is underway. If your
+            organisation values precision, discipline, and execution — this is a conversation worth having. A
+            partnership
+            prospectus is available on request.</p>
+          <a href="#contact" class="btn btn-primary">Start The Conversation</a>
+        </div>
       </div>
-      <div class="contact-detail">
-        <p>If you are reaching out about a partnership, come prepared with context about your organisation and what
-          alignment looks like from your side. That makes the first conversation productive for both parties.</p>
-        <p>For media or speaking enquiries, include the nature of the opportunity and relevant dates. Everything is
-          handled directly — no intermediaries.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- LOGO BAND -->
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <div class="rule"></div>
+          <h2 class="contact-title">Start The Conversation</h2>
+          <p class="contact-body">Direct contact is preferred. Partnership enquiries, media requests, and serious
+            opportunities handled personally.</p>
+          <a href="mailto:kevin@kevindoyleparalympian.com" class="contact-email">kevin@kevindoyleparalympian.com</a>
+          <p class="contact-response">Partnership enquiries responded to within 48 hours.</p>
+        </div>
+        <div class="contact-detail">
+          <p>If you are reaching out about a partnership, come prepared with context about your organisation and what
+            alignment looks like from your side. That makes the first conversation productive for both parties.</p>
+          <p>For media or speaking enquiries, include the nature of the opportunity and relevant dates. Everything is
+            handled directly — no intermediaries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO BAND -->
+  </main>
+
   <div class="logo-band">
     <div class="logo-band-inner">
-      <img src="assets/img/Target-Shooting-Ireland_Final_300-300x82.png" alt="Target Shooting Ireland">
-      <img src="assets/img/world-shooting-para-sports-300x300.jpg" alt="World Shooting Para Sport">
-      <img src="assets/img/ipc-300x69.png" alt="International Paralympic Committee">
+      <img src="assets/img/Target-Shooting-Ireland_Final_300-300x82.png" alt="Target Shooting Ireland" width="300"
+        height="82" loading="lazy">
+      <img src="assets/img/world-shooting-para-sports-300x300.jpg" alt="World Shooting Para Sport" width="300"
+        height="300" loading="lazy">
+      <img src="assets/img/ipc-300x69.png" alt="International Paralympic Committee" width="300" height="69"
+        loading="lazy">
     </div>
   </div>
 
